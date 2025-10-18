@@ -19,6 +19,7 @@ export const registerUser=async(userData)=>{
     const hashedPassword=await bcrypt.hash(password,10);
     userData.password=hashedPassword;
     const result=await userCollection.insertOne(userData);
+    result.insertedId=result.insertedId.toString();
     const {acknowledged,insertedId}=result;
     return {acknowledged,insertedId};
 }
