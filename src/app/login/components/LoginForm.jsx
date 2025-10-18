@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { signIn } from "next-auth/react"
 import { useRouter } from 'next/navigation'
+import SocialLogin from './SocialLogin'
 
 export default function LoginForm() {
   const router = useRouter()
@@ -82,6 +83,7 @@ export default function LoginForm() {
       >
         {loading ? 'Signing in...' : 'Sign In'}
       </button>
+      <SocialLogin></SocialLogin>
     </form>
   )
 }
