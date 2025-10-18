@@ -27,7 +27,7 @@ export default function Navbar() {
         {links()}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Car Service</a>
+    <Link href="/" className="btn btn-ghost text-xl">Car Service</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -35,7 +35,7 @@ export default function Navbar() {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <a className="btn">Appointment</a>
   </div>
 </div>
   )
